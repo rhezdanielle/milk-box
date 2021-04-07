@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #D0FCFF;
+}
+
+    /* sidebar */
+
+.about {
+    text-align: left;
+    height: 100%;
+    width: 25%;
+    background-color: #8CCCDC;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    position: fixed;
+    animation: about-out 1s forwards;
+}
+
+.about h2{
+    padding-left: 15px;
+    font-size: 50px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    color: white;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about h1{
+    font-size: 35px;
+    font-style: italic;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navigation nav ul li{
+    font-size: 20px;
+    border-width: 10px;
+    padding-bottom: 20px;
+    width: 100px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    border: black;
+    text-decoration: none;
+    
+}
+
+.navigation nav ul li button{
+    text-align: left;
+    font-size: 20px;
+    text-indent: 10px;
+    border: none;
+    width: 250%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    color: #CAF4FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navigation nav ul li a{
+    font-size: 20px;
+    width: 50px;
+    text-decoration: none;
+}
+
+.line{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+}
+
+.blog-post {
+    left: 30%;
+    top: 20%;
+    position: absolute;
+}
+
+.post-1, .post-2, .post-3 {
+    background-color: white;
+    display: block;
+    height: 450px;
+    width: 900px;
+    text-align: center;
+    animation: post-1-out 1s forwards;
+}
+
+.post-1 h2, .post-2 h2, .post-3 h2 {
+    color: white;
+    background-color: #FF9EAB;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.post-1 p, .post-2 p, .post-3 p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.footer {
+    height: 10%;;
+    width: 100%;
+    position: stick;
+    background-color: black;
+}
+
+.about-me{
+    stroke: white;
+    stroke-width: 10px;
+    color: #CAF4FF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 20%;
+}
+
+/* hover */
+
+.navigation nav ul li button:hover{
+   /* animation: aboutButtonHover 1s ease; */
+    background-color: #FFCCD5;
+    color: white;
+}
+
+.about:hover {
+    animation: about-in 1s forwards;
+}
+
+.post-1:hover{
+    animation: post-1-in 1s forwards;
+}
+
+.post-2:hover{
+    animation: post-1-in 1s forwards;
+}
+
+.post-3:hover{
+    animation: post-1-in 1s forwards;
+}
+
+
+/* animations */
+
+@keyframes about-in{
+    0%{
+        padding-left: 5px;
+        width: 20%;
+    }
+    100% {
+        padding-left: 15px;
+        width: 25%;
+    }
+}
+
+@keyframes about-out{
+    0%{
+        padding-left: 15px;
+        width: 25%;
+    }
+    100% {
+        padding-left: 5px;
+        width: 20%;
+    }
+}
+
+@keyframes post-1-in{
+    0%{
+        height: 450px;
+        margin-bottom: 5%;
+    }
+    100%{
+        height: 500px;
+        margin-bottom: 10%;
+    }
+}
+
+@keyframes post-1-out{
+    0%{
+        height: 500px;
+        margin-bottom: 10%;
+ 
+    }
+    100%{
+        height: 450px;
+        margin-bottom: 5%;
+    }
+}
+
+/* button keyframes*/
+
+@keyframes aboutButtonHover{
+    0%{
+        border-style: solid;
+        border-width: 0px;
+    }
+    100%{
+        border-width: 10px;
+    }
+}
+
+@keyframes fontColorButtonChange{
+    0%{
+        color: black;
+    }
+    100%{
+        color: white;
+    }
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #FFCCD5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7DAEBA;
+}
