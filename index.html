@@ -7,18 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="about-me">
-        <h2>About me</h2>
-    </div>
+    <script src="script.js"></script>
     <div class="about">
     <h2>MILK BOX</h2>
     <h1>NOTES<h1>
         <div class="navigation">
             <nav>
              <ul>
-                <li class="About"><a href=""><button>NEW NOTE</li></button></a>
-                <li class="Portfolio"><a href=""><button>SAVE NOTE</li></button></a>
-                <li class="Contact"><a href=""><button>LOAD NOTE</li></a></button></a>
+                <li class="new-note"><a href=""><button>NEW NOTE</li></button></a>
+                <li class="save-note"><a href=""><button onclick="return save_note()">SAVE NOTE</li></button></a>
+                <li class="open-note"><a href=""><button>OPEN NOTE</li></a></button></a>
              </ul>
             </nav>
         </div>
@@ -27,15 +25,13 @@
     <ul class="post">
         <li class="post-1">
             <h2>POST</h2>
-            <p>Create notes here:</p>
+        <form action="" id="post">
+            <textarea name="note" id="note" cols="120" rows="20"></textarea>
+           
+        </form>
         </li>
     </ul>
     </div>
-    <div class="bg decor">
-    </div>
-    <div class="footer">
-
-    </div>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </body>
 </html>

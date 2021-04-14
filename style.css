@@ -87,6 +87,21 @@ body{
     position: absolute;
 }
 
+/* POST */
+
+#note {
+    /* position */
+    position: relative;
+    margin: 1% 1%;
+
+    /* disable resize */
+    resize: none;
+
+    /* text style */
+    border: none;
+    outline: none;
+}
+
 .post-1, .post-2, .post-3 {
     background-color: white;
     display: block;
